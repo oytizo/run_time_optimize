@@ -17,14 +17,14 @@
                     <thead>
                         <tr>
                             <th>Country</th>
-                            <th>total Shop</th>
+                            <th>total Employee</th>
                         </tr>
                     </thead>
                     <tbody>
                     @foreach($countrys as $country)
                         <tr>
                             <td>{{ $country->name }}</td>
-                            <td>{{ $country->shops_count }}</td>
+                            <td>{{ $country->employees_count }}</td>
                         </tr>
                         @endforeach
                     </tbody>

@@ -19,7 +19,9 @@ class HomeController extends Controller
         // $countrys=Country::find(2)->cities;
         // $countrys=Country::all();
         // dd($countrys);
-        $countrys=Country::withcount('shops')->get();
+        // $countrys=Country::withcount('shops')->get();
+        $countrys=Country::withcount('employees')->get();
+        // $countrys=Country::with('employees')->get();
         // $countrys=Country::with('shops')->get();
         // dd($countrys);
         return view('home',compact('countrys'));
